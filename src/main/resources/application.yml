@@ -7,3 +7,9 @@ spring:
             uri: http://localhost:8081
             predicates:
               - Path=/api/v1/*
+
+logging:
+  level:
+    root: error
+    org.springframework.cloud.gateway: trace
+    org.springframework.http.server.reactive: trace
